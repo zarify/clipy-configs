@@ -1,0 +1,17 @@
+{
+  "id": "testing-io-looped-for",
+  "title": "Testing - For Loop IO",
+  "version": "1.0",
+  "description": "Script for testing functionality.",
+  "instructions": "Just run the default program to check for expected behaviour.",
+  "feedback": [],
+  "tests": {
+    "groups": [],
+    "ungrouped": [],
+    "showGroupsToUsers": true
+  },
+  "starter": "for i in range(5):\n    word = input(\"Word? \")\n    print(f\"{i*'*'} - {word}\")",
+  "files": {
+    "/main.py": "for i in range(5):\n    word = input(\"Word? \")\n    print(f\"{i*'*'} - {word}\")"
+  }
+}

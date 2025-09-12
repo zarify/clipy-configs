@@ -1,0 +1,15 @@
+{
+  "id": "test-json",
+  "title": "Testing JSON files",
+  "version": "1.0",
+  "description": "Testing JSON files",
+  "instructions": "",
+  "feedback": "",
+  "tests": "",
+  "starter": "import json\n\nwith open(\"data.json\") as f:\n    data = json.loads(f.read())\n\nprint(data)",
+  "files": {
+    "/main.py": "import json\n\nwith open(\"data.json\") as f:\n    data = json.loads(f.read())\n\nprint(data)",
+    "data.json": "[\n\t{ \"gameID\": 1, \"game title\": \"Hades\", \"game description\": \"A fun Greek Mythology roguelite\", \"score\": 5 },\n\t{ \"gameID\": 2, \"game title\": \"Hades 2\", \"game description\": \"Another fun Greek Mythology roguelite\", \"score\": 5 }\n]"
+  },
+  "fileReadOnlyStatus": {}
+}

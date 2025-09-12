@@ -1,0 +1,18 @@
+{
+  "id": "testing-file-read",
+  "title": "Testing - File read",
+  "version": "1.0",
+  "description": "Script for testing functionality.",
+  "instructions": "Just run the default program to check for expected behaviour.",
+  "feedback": [],
+  "tests": {
+    "groups": [],
+    "ungrouped": [],
+    "showGroupsToUsers": true
+  },
+  "starter": "with open(\"names.txt\") as f:\n    data = f.read().strip()\n    for line in data.split(\"\\n\"):\n        print(f\"Name: {line}\")\nprint(\"Done\")",
+  "files": {
+    "/main.py": "with open(\"names.txt\") as f:\n    data = f.read().strip()\n    for line in data.split(\"\\n\"):\n        print(f\"Name: {line}\")\nprint(\"Done\")",
+    "names.txt": "Gerald\nDouglas\nFelix\nJemima\nSusan\nMax\n"
+  }
+}

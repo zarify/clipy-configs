@@ -1,0 +1,17 @@
+{
+  "id": "testing-io-basic",
+  "title": "Testing - Basic IO",
+  "version": "1.0",
+  "description": "Script for testing functionality.",
+  "instructions": "Just run the default program to check for expected behaviour.",
+  "feedback": [],
+  "tests": {
+    "groups": [],
+    "ungrouped": [],
+    "showGroupsToUsers": true
+  },
+  "starter": "word1 = input(\"First word? \")\nword2 = input(\"Second word? \")\nprint(word1 + word2)\nprint(\"Happy Portmanteau Day!\")",
+  "files": {
+    "/main.py": "word1 = input(\"First word? \")\nword2 = input(\"Second word? \")\nprint(word1 + word2)\nprint(\"Happy Portmanteau Day!\")"
+  }
+}

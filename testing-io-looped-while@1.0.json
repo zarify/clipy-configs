@@ -1,0 +1,17 @@
+{
+  "id": "testing-io-looped-while",
+  "title": "Testing - While Loop IO",
+  "version": "1.0",
+  "description": "Script for testing functionality.",
+  "instructions": "Just run the default program to check for expected behaviour.",
+  "feedback": [],
+  "tests": {
+    "groups": [],
+    "ungrouped": [],
+    "showGroupsToUsers": true
+  },
+  "starter": "loop_guard = input(\"Run loop? \")\nwhile loop_guard == \"y\":\n    print(\"OK, looping\")\n    loop_guard = input(\"Run loop again? \")\nprint(\"Done looping!\")",
+  "files": {
+    "/main.py": "loop_guard = input(\"Run loop? \")\nwhile loop_guard == \"y\":\n    print(\"OK, looping\")\n    loop_guard = input(\"Run loop again? \")\nprint(\"Done looping!\")"
+  }
+}

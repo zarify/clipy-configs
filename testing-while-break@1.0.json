@@ -1,0 +1,17 @@
+{
+  "id": "testing-while-break",
+  "title": "Testing - While Loop breaking",
+  "version": "1.0",
+  "description": "Script for testing functionality.",
+  "instructions": "Just run the default program to check for expected behaviour.",
+  "feedback": [],
+  "tests": {
+    "groups": [],
+    "ungrouped": [],
+    "showGroupsToUsers": true
+  },
+  "starter": "i = 0\nwhile i < 20:\n    print(f\"Loop {i}\")\n    i += 1\n    if i > 5:\n        break\nprint(\"Done.\")",
+  "files": {
+    "/main.py": "i = 0\nwhile i < 20:\n    print(f\"Loop {i}\")\n    i += 1\n    if i > 5:\n        break\nprint(\"Done.\")"
+  }
+}

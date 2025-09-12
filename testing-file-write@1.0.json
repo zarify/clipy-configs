@@ -1,0 +1,17 @@
+{
+  "id": "testing-file-write",
+  "title": "Testing - File write",
+  "version": "1.0",
+  "description": "Script for testing functionality.",
+  "instructions": "Just run the default program to check for expected behaviour.",
+  "feedback": [],
+  "tests": {
+    "groups": [],
+    "ungrouped": [],
+    "showGroupsToUsers": true
+  },
+  "starter": "# this should open a file tab\nwith open(\"names.txt\", \"w\") as f:\n    for name in [\"Bob\", \"Douglas\", \"Susan\", \"Jemima\"]:\n        f.write(f\"{name}\\n\")\nprint(\"Done\")",
+  "files": {
+    "/main.py": "# this should open a file tab\nwith open(\"names.txt\", \"w\") as f:\n    for name in [\"Bob\", \"Douglas\", \"Susan\", \"Jemima\"]:\n        f.write(f\"{name}\\n\")\nprint(\"Done\")"
+  }
+}

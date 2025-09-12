@@ -1,0 +1,17 @@
+{
+  "id": "testing-io-walrus",
+  "title": "Testing - IO Walrus",
+  "version": "1.0",
+  "description": "Script for testing functionality.",
+  "instructions": "Just run the default program to check for expected behaviour.",
+  "feedback": [],
+  "tests": {
+    "groups": [],
+    "ungrouped": [],
+    "showGroupsToUsers": true
+  },
+  "starter": "if name := input(\"Name? \"):\n    print(f\"Hello {name}!\")\nelse:\n    print(\"Ooh mysterious!\")",
+  "files": {
+    "/main.py": "if name := input(\"Name? \"):\n    print(f\"Hello {name}!\")\nelse:\n    print(\"Ooh mysterious!\")"
+  }
+}
