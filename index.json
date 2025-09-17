@@ -1,11 +1,14 @@
-[
-    "test-json@1.0.json",
-    "test-read-write@1.0.json",
-    "testing-file-read@1.0.json",
-    "testing-file-write@1.0.json",
-    "testing-io-basic@1.0.json",
-    "testing-io-looped-for@1.0.json",
-    "testing-io-looped-while@1.0.json",
-    "testing-io-walrus@1.0.json",
-    "testing-while-break@1.0.json"
-]
+{
+    "listName": "Testing Files",
+    "files": [
+        "test-json@1.0.json",
+        "test-read-write@1.0.json",
+        "testing-file-read@1.0.json",
+        "testing-file-write@1.0.json",
+        "testing-io-basic@1.0.json",
+        "testing-io-looped-for@1.0.json",
+        "testing-io-looped-while@1.0.json",
+        "testing-io-walrus@1.0.json",
+        "testing-while-break@1.0.json"
+    ]
+}
