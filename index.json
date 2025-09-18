@@ -9,6 +9,7 @@
         "testing-io-looped-for@1.0.json",
         "testing-io-looped-while@1.0.json",
         "testing-io-walrus@1.0.json",
-        "testing-while-break@1.0.json"
+        "testing-while-break@1.0.json",
+        "testing-feedback@1.0.json"
     ]
 }
