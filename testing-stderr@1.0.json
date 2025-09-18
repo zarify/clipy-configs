@@ -1,0 +1,80 @@
+{
+  "id": "testing-stderr",
+  "title": "Testing stderr",
+  "version": "1.0",
+  "description": "A testing config for feedback and tests that incorporate stderr.",
+  "instructions": "Check the feedback on run for stderr feedback.\n\nTest the code for the stderr case.",
+  "feedback": [
+    {
+      "id": "fb-mfpb1wmn-myw8a",
+      "title": "Oh no, an error!",
+      "when": [
+        "run"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "stderr",
+        "fileTarget": "main.py",
+        "expression": "Traceback",
+        "flags": ""
+      },
+      "message": "I hope you read the error message.\nWhat does it mean?",
+      "severity": "error",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mfpb37xl-khooe",
+      "title": "Hidden: Oh no, an error!",
+      "when": [
+        "run"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "stderr",
+        "fileTarget": "main.py",
+        "expression": "Traceback",
+        "flags": ""
+      },
+      "message": "Oh no an error!\nI hope you read the message.",
+      "severity": "error",
+      "visibleByDefault": false
+    },
+    {
+      "id": "fb-mfpb8hpn-1zmny",
+      "title": "This test should not trigger.",
+      "when": [
+        "run"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "stdout",
+        "fileTarget": "main.py",
+        "expression": "Traceback",
+        "flags": ""
+      },
+      "message": "So I guess this is a thing?",
+      "severity": "error",
+      "visibleByDefault": true
+    }
+  ],
+  "tests": {
+    "groups": [],
+    "ungrouped": [
+      {
+        "id": "t-mfpb44q8-002v1",
+        "description": "Checked that an error was raised.",
+        "expected_stderr": "Traceback",
+        "failureMessage": "Well, we got an error. Now what?",
+        "conditional": {
+          "runIf": "always",
+          "alwaysRun": false
+        }
+      }
+    ]
+  },
+  "starter": "print(oh no)",
+  "files": {
+    "/main.py": "print(oh no)"
+  },
+  "fileReadOnlyStatus": {}
+}
