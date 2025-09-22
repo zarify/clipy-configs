@@ -1,0 +1,12 @@
+{
+    "id": "unhandled-attribute-error",
+    "name": "AttributeError Example",
+    "version": "1.0.0",
+    "description": "Demonstrate an AttributeError (int has no attribute 'append').",
+    "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"attribute_error.py\", line 2, in <module>\n    x.append(3)\nAttributeError: 'int' object has no attribute 'append'\n```",
+    "feedback": "",
+    "tests": "",
+    "starter": "x = 5\nx.append(3)\n",
+    "files": {"/attribute_error.py": "x = 5\nx.append(3)\n"},
+    "fileReadOnlyStatus": {}
+}

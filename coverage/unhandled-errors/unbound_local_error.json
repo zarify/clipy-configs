@@ -1,0 +1,12 @@
+{
+    "id": "unhandled-unbound-local-error",
+    "name": "UnboundLocalError Example",
+    "version": "1.0.0",
+    "description": "Demonstrate an UnboundLocalError (referencing a local variable before assignment).",
+    "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"unbound_local_error.py\", line 4, in <module>\n    foo()\n  File \"unbound_local_error.py\", line 2, in foo\n    print(x)\nUnboundLocalError: local variable 'x' referenced before assignment\n```",
+    "feedback": "",
+    "tests": "",
+    "starter": "def foo():\n    print(x)\n    x = 5\nfoo()\n",
+    "files": {"/unbound_local_error.py": "def foo():\n    print(x)\n    x = 5\nfoo()\n"},
+    "fileReadOnlyStatus": {}
+}

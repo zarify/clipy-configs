@@ -1,0 +1,17 @@
+{
+    "listName": "Basic Python Concepts",
+    "files": [
+        "variables/assign_and_print.json",
+        "variables/user_input.json",
+        "conditionals/even_or_odd.json",
+        "loops/sum_list.json",
+        "functions/greet.json",
+        "functions/factorial.json",
+        "file-io/write_and_read.json",
+        "oop/simple_class.json",
+        "data-structures/list_and_dict.json",
+        "string-manipulation/slice_and_format.json",
+        "modules/use_math.json",
+        "modules/import_local.json"
+    ]
+}

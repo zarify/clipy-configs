@@ -1,0 +1,23 @@
+{
+    "listName": "Unhandled Error Demonstrations",
+    "files": [
+        "unhandled-errors/syntax_error.json",
+        "unhandled-errors/name_error.json",
+        "unhandled-errors/indentation_error.json",
+        "unhandled-errors/type_error.json",
+        "unhandled-errors/value_error.json",
+        "unhandled-errors/index_error.json",
+        "unhandled-errors/key_error.json",
+        "unhandled-errors/attribute_error.json",
+        "unhandled-errors/zero_division_error.json",
+        "unhandled-errors/import_error.json",
+        "unhandled-errors/module_not_found_error.json",
+        "unhandled-errors/file_not_found_error.json",
+        "unhandled-errors/unbound_local_error.json",
+        "unhandled-errors/recursion_error.json",
+        "unhandled-errors/stop_iteration.json",
+        "unhandled-errors/overflow_error.json",
+        "unhandled-errors/not_implemented_error.json",
+        "unhandled-errors/assertion_error.json"
+    ]
+}

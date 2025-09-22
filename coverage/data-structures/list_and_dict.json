@@ -1,0 +1,14 @@
+{
+    "id": "data-structures-list-and-dict",
+    "name": "List and Dictionary Operations",
+    "version": "1.0.0",
+    "description": "Demonstrate basic list and dictionary operations.",
+    "instructions": "Run the code to see list and dictionary operations.",
+    "feedback": "",
+    "tests": "",
+    "starter": "# List operations\nfruits = ['apple', 'banana', 'cherry']\nfruits.append('date')\nprint('Fruits:', fruits)\n# Dictionary operations\nperson = {'name': 'Alice', 'age': 20}\nperson['city'] = 'London'\nprint('Person:', person)\n",
+    "files": {
+        "/list_and_dict.py": "# List operations\nfruits = ['apple', 'banana', 'cherry']\nfruits.append('date')\nprint('Fruits:', fruits)\n# Dictionary operations\nperson = {'name': 'Alice', 'age': 20}\nperson['city'] = 'London'\nprint('Person:', person)\n"
+    },
+    "fileReadOnlyStatus": {}
+}

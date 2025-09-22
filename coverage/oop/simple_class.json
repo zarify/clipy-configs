@@ -1,0 +1,14 @@
+{
+    "id": "oop-simple-class",
+    "name": "Simple Class Example",
+    "version": "1.0.0",
+    "description": "Define a class and use its method.",
+    "instructions": "Run the code to see a class and method in action.",
+    "feedback": "",
+    "tests": "",
+    "starter": "class Dog:\n    def __init__(self, name):\n        self.name = name\n    def bark(self):\n        print(self.name + ' says woof!')\n\nmy_dog = Dog('Fido')\nmy_dog.bark()\n",
+    "files": {
+        "/simple_class.py": "class Dog:\n    def __init__(self, name):\n        self.name = name\n    def bark(self):\n        print(self.name + ' says woof!')\n\nmy_dog = Dog('Fido')\nmy_dog.bark()\n"
+    },
+    "fileReadOnlyStatus": {}
+}

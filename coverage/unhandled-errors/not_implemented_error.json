@@ -1,0 +1,12 @@
+{
+    "id": "unhandled-not-implemented-error",
+    "name": "NotImplementedError Example",
+    "version": "1.0.0",
+    "description": "Demonstrate a NotImplementedError (explicitly raised).",
+    "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"not_implemented_error.py\", line 1, in <module>\n    raise NotImplementedError(\"This feature is not implemented.\")\nNotImplementedError: This feature is not implemented.\n```",
+    "feedback": "",
+    "tests": "",
+    "starter": "raise NotImplementedError('This feature is not implemented.')\n",
+    "files": {"/not_implemented_error.py": "raise NotImplementedError('This feature is not implemented.')\n"},
+    "fileReadOnlyStatus": {}
+}

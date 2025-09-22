@@ -1,0 +1,14 @@
+{
+    "id": "functions-factorial-recursion",
+    "name": "Recursive Factorial",
+    "version": "1.0.0",
+    "description": "Calculate factorial using recursion.",
+    "instructions": "Run the code to see a recursive function in action.",
+    "feedback": "",
+    "tests": "",
+    "starter": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nprint('Factorial of 5:', factorial(5))\n",
+    "files": {
+        "/factorial.py": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nprint('Factorial of 5:', factorial(5))\n"
+    },
+    "fileReadOnlyStatus": {}
+}

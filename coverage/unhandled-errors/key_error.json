@@ -1,0 +1,12 @@
+{
+    "id": "unhandled-key-error",
+    "name": "KeyError Example",
+    "version": "1.0.0",
+    "description": "Demonstrate a KeyError (missing dictionary key).",
+    "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"key_error.py\", line 2, in <module>\n    print(d['b'])\nKeyError: 'b'\n```",
+    "feedback": "",
+    "tests": "",
+    "starter": "d = {'a': 1}\nprint(d['b'])\n",
+    "files": {"/key_error.py": "d = {'a': 1}\nprint(d['b'])\n"},
+    "fileReadOnlyStatus": {}
+}

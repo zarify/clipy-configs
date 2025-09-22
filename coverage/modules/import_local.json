@@ -1,0 +1,15 @@
+{
+    "id": "modules-import-local",
+    "name": "Import Local Module",
+    "version": "1.0.0",
+    "description": "Import and use a function from a local Python file.",
+    "instructions": "Run the code to see how to import from a local module.",
+    "feedback": "",
+    "tests": "",
+    "starter": "from helper import say_hello\n\nsay_hello('Alice')\n",
+    "files": {
+        "/import_local.py": "from helper import say_hello\n\nsay_hello('Alice')\n",
+        "helper.py": "def say_hello(name):\n    print(f'Hello, {name} from helper module!')\n"
+    },
+    "fileReadOnlyStatus": {}
+}

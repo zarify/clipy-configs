@@ -1,0 +1,12 @@
+{
+    "id": "unhandled-type-error",
+    "name": "TypeError Example",
+    "version": "1.0.0",
+    "description": "Demonstrate a TypeError (adding str and int).",
+    "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"type_error.py\", line 1, in <module>\n    result = '2' + 2\nTypeError: can only concatenate str (not 'int') to str\n```",
+    "feedback": "",
+    "tests": "",
+    "starter": "result = '2' + 2\n",
+    "files": {"/type_error.py": "result = '2' + 2\n"},
+    "fileReadOnlyStatus": {}
+}

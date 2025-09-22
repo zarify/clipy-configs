@@ -1,0 +1,14 @@
+{
+    "id": "modules-use-math",
+    "name": "Use Math Module",
+    "version": "1.0.0",
+    "description": "Import and use the math module for constants and functions.",
+    "instructions": "Run the code to see usage of the math module.",
+    "feedback": "",
+    "tests": "",
+    "starter": "import math\nprint('Pi:', math.pi)\nprint('Square root of 16:', math.sqrt(16))\n",
+    "files": {
+        "/use_math.py": "import math\nprint('Pi:', math.pi)\nprint('Square root of 16:', math.sqrt(16))\n"
+    },
+    "fileReadOnlyStatus": {}
+}

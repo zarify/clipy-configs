@@ -1,0 +1,14 @@
+{
+    "id": "functions-greet",
+    "name": "Greet Function",
+    "version": "1.0.0",
+    "description": "Define and call a function that greets the user.",
+    "instructions": "Run the code to see the greeting function in action.",
+    "feedback": "",
+    "tests": "",
+    "starter": "def greet(name):\n    print('Hello, ' + name + '!')\n\ngreet('Alice')\n",
+    "files": {
+        "/greet.py": "def greet(name):\n    print('Hello, ' + name + '!')\n\ngreet('Alice')\n"
+    },
+    "fileReadOnlyStatus": {}
+}

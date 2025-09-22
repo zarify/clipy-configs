@@ -1,0 +1,12 @@
+{
+    "id": "unhandled-recursion-error",
+    "name": "RecursionError Example",
+    "version": "1.0.0",
+    "description": "Demonstrate a RecursionError (maximum recursion depth exceeded).",
+    "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"recursion_error.py\", line 3, in <module>\n    recurse()\n  ...\nRecursionError: maximum recursion depth exceeded\n```",
+    "feedback": "",
+    "tests": "",
+    "starter": "def recurse():\n    return recurse()\nrecurse()\n",
+    "files": {"/recursion_error.py": "def recurse():\n    return recurse()\nrecurse()\n"},
+    "fileReadOnlyStatus": {}
+}

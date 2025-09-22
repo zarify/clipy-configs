@@ -1,0 +1,12 @@
+{
+    "id": "unhandled-name-error",
+    "name": "NameError Example",
+    "version": "1.0.0",
+    "description": "Demonstrate a NameError (undefined variable).",
+    "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"name_error.py\", line 1, in <module>\n    print(unknown_variable)\nNameError: name 'unknown_variable' is not defined\n```",
+    "feedback": "",
+    "tests": "",
+    "starter": "print(unknown_variable)\n",
+    "files": {"/name_error.py": "print(unknown_variable)\n"},
+    "fileReadOnlyStatus": {}
+}

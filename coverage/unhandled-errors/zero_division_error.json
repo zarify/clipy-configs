@@ -1,0 +1,12 @@
+{
+    "id": "unhandled-zero-division-error",
+    "name": "ZeroDivisionError Example",
+    "version": "1.0.0",
+    "description": "Demonstrate a ZeroDivisionError (division by zero).",
+    "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"zero_division_error.py\", line 1, in <module>\n    print(1 / 0)\nZeroDivisionError: division by zero\n```",
+    "feedback": "",
+    "tests": "",
+    "starter": "print(1 / 0)\n",
+    "files": {"/zero_division_error.py": "print(1 / 0)\n"},
+    "fileReadOnlyStatus": {}
+}

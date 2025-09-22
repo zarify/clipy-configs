@@ -1,0 +1,14 @@
+{
+    "id": "file-io-write-and-read",
+    "name": "Write and Read File",
+    "version": "1.0.0",
+    "description": "Write to a file and then read from it.",
+    "instructions": "Run the code to write to and read from a file.",
+    "feedback": "",
+    "tests": "",
+    "starter": "# Write to a file\nwith open('example.txt', 'w') as f:\n    f.write('Hello, file!\\n')\n# Read from the file\nwith open('example.txt', 'r') as f:\n    content = f.read()\nprint(content)\n",
+    "files": {
+        "/write_and_read.py": "# Write to a file\nwith open('example.txt', 'w') as f:\n    f.write('Hello, file!\\n')\n# Read from the file\nwith open('example.txt', 'r') as f:\n    content = f.read()\nprint(content)\n"
+    },
+    "fileReadOnlyStatus": {}
+}

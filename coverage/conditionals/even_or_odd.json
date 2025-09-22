@@ -1,0 +1,14 @@
+{
+    "id": "conditionals-even-or-odd",
+    "name": "Even or Odd",
+    "version": "1.0.0",
+    "description": "Check if a number is even or odd using if/else.",
+    "instructions": "Run the code to see if the number is even or odd.",
+    "feedback": "",
+    "tests": "",
+    "starter": "number = 7\nif number % 2 == 0:\n    print(number, 'is even')\nelse:\n    print(number, 'is odd')\n",
+    "files": {
+        "/even_or_odd.py": "number = 7\nif number % 2 == 0:\n    print(number, 'is even')\nelse:\n    print(number, 'is odd')\n"
+    },
+    "fileReadOnlyStatus": {}
+}

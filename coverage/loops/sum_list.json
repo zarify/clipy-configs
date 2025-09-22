@@ -1,0 +1,14 @@
+{
+    "id": "loops-sum-list",
+    "name": "Sum List with For Loop",
+    "version": "1.0.0",
+    "description": "Sum the elements of a list using a for loop.",
+    "instructions": "Run the code to see the sum of the list elements.",
+    "feedback": "",
+    "tests": "",
+    "starter": "numbers = [1, 2, 3, 4, 5]\ntotal = 0\nfor num in numbers:\n    total += num\nprint('Sum:', total)\n",
+    "files": {
+        "/sum_list.py": "numbers = [1, 2, 3, 4, 5]\ntotal = 0\nfor num in numbers:\n    total += num\nprint('Sum:', total)\n"
+    },
+    "fileReadOnlyStatus": {}
+}

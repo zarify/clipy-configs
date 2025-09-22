@@ -1,0 +1,14 @@
+{
+    "id": "variables-assign-and-print",
+    "name": "Assign and Print Variables",
+    "version": "1.0.0",
+    "description": "Assign values to variables and print them.",
+    "instructions": "Run the code to see variable assignment and output.",
+    "feedback": "",
+    "tests": "",
+    "starter": "name = \"Alice\"\nage = 20\nprint(\"Name:\", name)\nprint(\"Age:\", age)\n",
+    "files": {
+        "/assign_and_print.py": "name = \"Alice\"\nage = 20\nprint(\"Name:\", name)\nprint(\"Age:\", age)\n"
+    },
+    "fileReadOnlyStatus": {}
+}

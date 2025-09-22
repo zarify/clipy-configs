@@ -1,0 +1,14 @@
+{
+    "id": "string-manipulation-slice-and-format",
+    "name": "String Slicing and Formatting",
+    "version": "1.0.0",
+    "description": "Demonstrate string slicing and f-string formatting.",
+    "instructions": "Run the code to see string slicing and formatting.",
+    "feedback": "",
+    "tests": "",
+    "starter": "text = 'Hello, Python!'\nprint('First 5 characters:', text[:5])\nname = 'Alice'\ngreeting = f'Hello, {name}!'\nprint(greeting)\n",
+    "files": {
+        "/slice_and_format.py": "text = 'Hello, Python!'\nprint('First 5 characters:', text[:5])\nname = 'Alice'\ngreeting = f'Hello, {name}!'\nprint(greeting)\n"
+    },
+    "fileReadOnlyStatus": {}
+}
