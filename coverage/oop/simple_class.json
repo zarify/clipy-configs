@@ -1,6 +1,6 @@
 {
     "id": "oop-simple-class",
-    "name": "Simple Class Example",
+    "title": "Simple Class Example",
     "version": "1.0.0",
     "description": "Define a class and use its method.",
     "instructions": "Run the code to see a class and method in action.",

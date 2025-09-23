@@ -1,6 +1,6 @@
 {
     "id": "functions-greet",
-    "name": "Greet Function",
+    "title": "Greet Function",
     "version": "1.0.0",
     "description": "Define and call a function that greets the user.",
     "instructions": "Run the code to see the greeting function in action.",

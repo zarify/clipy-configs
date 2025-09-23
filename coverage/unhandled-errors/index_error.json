@@ -1,6 +1,6 @@
 {
     "id": "unhandled-index-error",
-    "name": "IndexError Example",
+    "title": "IndexError Example",
     "version": "1.0.0",
     "description": "Demonstrate an IndexError (list index out of range).",
     "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"index_error.py\", line 2, in <module>\n    print(lst[5])\nIndexError: list index out of range\n```",

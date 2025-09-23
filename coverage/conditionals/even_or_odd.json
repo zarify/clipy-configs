@@ -1,6 +1,6 @@
 {
     "id": "conditionals-even-or-odd",
-    "name": "Even or Odd",
+    "title": "Even or Odd",
     "version": "1.0.0",
     "description": "Check if a number is even or odd using if/else.",
     "instructions": "Run the code to see if the number is even or odd.",

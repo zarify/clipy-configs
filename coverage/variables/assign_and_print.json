@@ -1,6 +1,6 @@
 {
     "id": "variables-assign-and-print",
-    "name": "Assign and Print Variables",
+    "title": "Assign and Print Variables",
     "version": "1.0.0",
     "description": "Assign values to variables and print them.",
     "instructions": "Run the code to see variable assignment and output.",

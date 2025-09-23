@@ -1,6 +1,6 @@
 {
     "id": "unhandled-import-error",
-    "name": "ImportError Example",
+    "title": "ImportError Example",
     "version": "1.0.0",
     "description": "Demonstrate an ImportError (importing non-existent name from module).",
     "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"import_error.py\", line 1, in <module>\n    from math import not_a_function\nImportError: cannot import name 'not_a_function' from 'math'\n```",

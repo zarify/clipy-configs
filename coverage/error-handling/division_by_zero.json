@@ -1,6 +1,6 @@
 {
     "id": "error-handling-division-by-zero",
-    "name": "Division by Zero Handling",
+    "title": "Division by Zero Handling",
     "version": "1.0.0",
     "description": "Handle division by zero using try/except.",
     "instructions": "Run the code to see error handling for division by zero.",

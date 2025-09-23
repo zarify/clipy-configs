@@ -1,6 +1,6 @@
 {
     "id": "modules-import-local",
-    "name": "Import Local Module",
+    "title": "Import Local Module",
     "version": "1.0.0",
     "description": "Import and use a function from a local Python file.",
     "instructions": "Run the code to see how to import from a local module.",

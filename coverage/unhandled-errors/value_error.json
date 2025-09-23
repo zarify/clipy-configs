@@ -1,6 +1,6 @@
 {
     "id": "unhandled-value-error",
-    "name": "ValueError Example",
+    "title": "ValueError Example",
     "version": "1.0.0",
     "description": "Demonstrate a ValueError (invalid literal for int).",
     "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"value_error.py\", line 1, in <module>\n    int('not_a_number')\nValueError: invalid literal for int() with base 10: 'not_a_number'\n```",

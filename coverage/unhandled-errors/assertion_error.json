@@ -1,6 +1,6 @@
 {
     "id": "unhandled-assertion-error",
-    "name": "AssertionError Example",
+    "title": "AssertionError Example",
     "version": "1.0.0",
     "description": "Demonstrate an AssertionError (assert statement fails).",
     "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"assertion_error.py\", line 1, in <module>\n    assert 2 + 2 == 5, \"Math is broken!\"\nAssertionError: Math is broken!\n```",

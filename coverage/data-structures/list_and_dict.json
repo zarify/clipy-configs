@@ -1,6 +1,6 @@
 {
     "id": "data-structures-list-and-dict",
-    "name": "List and Dictionary Operations",
+    "title": "List and Dictionary Operations",
     "version": "1.0.0",
     "description": "Demonstrate basic list and dictionary operations.",
     "instructions": "Run the code to see list and dictionary operations.",

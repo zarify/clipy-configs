@@ -1,6 +1,6 @@
 {
     "id": "unhandled-overflow-error",
-    "name": "OverflowError Example",
+    "title": "OverflowError Example",
     "version": "1.0.0",
     "description": "Demonstrate an OverflowError (math result too large to be represented).",
     "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"overflow_error.py\", line 2, in <module>\n    math.exp(1000)\nOverflowError: math range error\n```",

@@ -1,6 +1,6 @@
 {
     "id": "unhandled-syntax-error",
-    "name": "SyntaxError Example",
+    "title": "SyntaxError Example",
     "version": "1.0.0",
     "description": "Demonstrate a SyntaxError (missing parenthesis).",
     "instructions": "Run the code. You should see:\n```\n  File \"syntax_error.py\", line 1\n    print(\"Hello\"\n         ^\nSyntaxError: '(' was never closed\n```",

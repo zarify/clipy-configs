@@ -1,6 +1,6 @@
 {
     "id": "functions-factorial-recursion",
-    "name": "Recursive Factorial",
+    "title": "Recursive Factorial",
     "version": "1.0.0",
     "description": "Calculate factorial using recursion.",
     "instructions": "Run the code to see a recursive function in action.",

@@ -1,6 +1,6 @@
 {
     "id": "unhandled-indentation-error",
-    "name": "IndentationError Example",
+    "title": "IndentationError Example",
     "version": "1.0.0",
     "description": "Demonstrate an IndentationError (missing indentation in function).",
     "instructions": "Run the code. You should see:\n```\n  File \"indentation_error.py\", line 2\n    print(\"bad indent\")\n    ^\nIndentationError: expected an indented block\n```",

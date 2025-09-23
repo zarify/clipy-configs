@@ -1,6 +1,6 @@
 {
     "id": "variables-user-input",
-    "name": "User Input Example",
+    "title": "User Input Example",
     "version": "1.0.0",
     "description": "Get user input and print a greeting.",
     "instructions": "Run the code and enter your name when prompted.",

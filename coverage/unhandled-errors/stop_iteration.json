@@ -1,6 +1,6 @@
 {
     "id": "unhandled-stop-iteration",
-    "name": "StopIteration Example",
+    "title": "StopIteration Example",
     "version": "1.0.0",
     "description": "Demonstrate a StopIteration (calling next on an empty iterator).",
     "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"stop_iteration.py\", line 2, in <module>\n    next(it)\nStopIteration\n```",

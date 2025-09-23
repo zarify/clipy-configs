@@ -1,6 +1,6 @@
 {
     "id": "modules-use-math",
-    "name": "Use Math Module",
+    "title": "Use Math Module",
     "version": "1.0.0",
     "description": "Import and use the math module for constants and functions.",
     "instructions": "Run the code to see usage of the math module.",

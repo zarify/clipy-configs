@@ -1,6 +1,6 @@
 {
     "id": "unhandled-module-not-found-error",
-    "name": "ModuleNotFoundError Example",
+    "title": "ModuleNotFoundError Example",
     "version": "1.0.0",
     "description": "Demonstrate a ModuleNotFoundError (importing a non-existent module).",
     "instructions": "Run the code. You should see:\n```\nTraceback (most recent call last):\n  File \"module_not_found_error.py\", line 1, in <module>\n    import not_a_real_module\nModuleNotFoundError: No module named 'not_a_real_module'\n```",

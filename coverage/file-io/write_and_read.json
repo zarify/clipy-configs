@@ -1,6 +1,6 @@
 {
     "id": "file-io-write-and-read",
-    "name": "Write and Read File",
+    "title": "Write and Read File",
     "version": "1.0.0",
     "description": "Write to a file and then read from it.",
     "instructions": "Run the code to write to and read from a file.",

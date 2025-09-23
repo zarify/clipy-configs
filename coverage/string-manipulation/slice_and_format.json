@@ -1,6 +1,6 @@
 {
     "id": "string-manipulation-slice-and-format",
-    "name": "String Slicing and Formatting",
+    "title": "String Slicing and Formatting",
     "version": "1.0.0",
     "description": "Demonstrate string slicing and f-string formatting.",
     "instructions": "Run the code to see string slicing and formatting.",
