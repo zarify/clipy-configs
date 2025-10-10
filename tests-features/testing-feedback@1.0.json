@@ -1,0 +1,185 @@
+{
+  "id": "testing-feedback",
+  "title": "Testing Feedback",
+  "version": "1.0",
+  "description": "A config for testing styling of feedback.",
+  "instructions": "This test should show every feedback style.",
+  "feedback": [
+    {
+      "id": "fb-mfp51vv6-0m7hm",
+      "title": "Checking for print (success)",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "print",
+        "flags": ""
+      },
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mfp7e75w-i90ah",
+      "title": "Checking for print (success msg)",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "print",
+        "flags": ""
+      },
+      "message": "Yes! You did it!",
+      "severity": "success",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mfp53d1z-zf2hl",
+      "title": "Checking for print (hint)",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "regex",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "print\\((['\"]).+\\1\\)",
+        "flags": ""
+      },
+      "message": "",
+      "severity": "hint",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mfp7eu1i-lbbdh",
+      "title": "Checking for print (hint msg)",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "print",
+        "flags": ""
+      },
+      "message": "Yes! You did it!",
+      "severity": "hint",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mfp61r89-2r0bo",
+      "title": "Checking for print (info)",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "print",
+        "flags": ""
+      },
+      "message": "",
+      "severity": "info",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mfp7fbfy-6ic80",
+      "title": "Checking for print (info msg)",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "print",
+        "flags": ""
+      },
+      "message": "Yes! You did it!",
+      "severity": "info",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mfp63nq1-djl5x",
+      "title": "Checking for print (warning)",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "print",
+        "flags": ""
+      },
+      "message": "",
+      "severity": "warning",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mfp7fuu2-7wiid",
+      "title": "Checking for print (warning msg)",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "print",
+        "flags": ""
+      },
+      "message": "Yes! You did it!",
+      "severity": "warning",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mfp6hvht-pwkak",
+      "title": "Checking for print (error)",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "print",
+        "flags": ""
+      },
+      "message": "",
+      "severity": "error",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mfp7gcgf-oiyj1",
+      "title": "Checking for print (error msg)",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "print",
+        "flags": ""
+      },
+      "message": "Yes! You did it!",
+      "severity": "error",
+      "visibleByDefault": true
+    }
+  ],
+  "tests": "",
+  "starter": "print(\"Hello\")\n",
+  "files": {
+    "/main.py": "print(\"Hello\")\n"
+  },
+  "fileReadOnlyStatus": {}
+}

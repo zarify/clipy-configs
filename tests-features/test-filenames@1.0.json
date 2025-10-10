@@ -1,0 +1,86 @@
+{
+  "id": "test-filenames",
+  "title": "Testing Filenames",
+  "version": "1.0",
+  "description": "",
+  "instructions": "# Feedback\nManually create a file called `test.txt` - the first feedback item should fire.\n\nRun the code to create a file called `test2.txt` - the second feedback item should fire.\n\n# Tests\nRun the test suite after creating the `test.txt` file.\n\nBoth tests should pass.",
+  "feedback": [
+    {
+      "id": "fb-mgksgwap-d2f35",
+      "title": "Manually create `test.txt`",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "filename",
+        "fileTarget": "test.txt",
+        "expression": "",
+        "flags": ""
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mgkshdxv-l8s5e",
+      "title": "Run the code to create `test2.txt`",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "filename",
+        "fileTarget": "test2.txt",
+        "expression": "",
+        "flags": ""
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    }
+  ],
+  "tests": {
+    "groups": [],
+    "ungrouped": [
+      {
+        "id": "t-mgksvtpp-8lg2z",
+        "description": "Checking that `test.txt` was present",
+        "expected_stdout": "test.txt present",
+        "files": {
+          "/__pre.py": "import os\nif \"test.txt\" in os.listdir():\n    print(\"test.txt present\")"
+        },
+        "hide_actual_expected": true,
+        "conditional": {
+          "runIf": "previous_passed",
+          "alwaysRun": false
+        }
+      },
+      {
+        "id": "t-mgkshwl5-ml7cd",
+        "description": "Checking that test2.txt was created",
+        "expected_stdout": {
+          "type": "exact",
+          "expression": "Tried to remove test2.txt\nDone\ntest2.txt present"
+        },
+        "files": {
+          "/__post.py": "import os\nfiles = os.listdir()\nif \"test2.txt\" in files:\n    print(\"test2.txt present\")",
+          "/__pre.py": "import os\ntry:\n    os.remove(\"test2.txt\")\nexcept:\n    pass\nprint(\"Tried to remove test2.txt\")"
+        },
+        "hide_actual_expected": true,
+        "conditional": {
+          "runIf": "previous_passed",
+          "alwaysRun": false
+        }
+      }
+    ],
+    "showGroupsToUsers": true
+  },
+  "starter": "with open(\"test2.txt\", \"w\") as f:\n    f.write(\"nothing to see here\\n\")\nprint(\"Done\")",
+  "files": {
+    "/main.py": "with open(\"test2.txt\", \"w\") as f:\n    f.write(\"nothing to see here\\n\")\nprint(\"Done\")"
+  },
+  "fileReadOnlyStatus": {}
+}

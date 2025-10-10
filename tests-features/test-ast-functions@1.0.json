@@ -1,0 +1,243 @@
+{
+  "id": "test-ast-functions",
+  "title": "Test AST function feedback",
+  "version": "1.0",
+  "description": "",
+  "instructions": "This code needs to be fixed:\n- `my_function` needs to be called\n- `my_function` needs the correct number of parameters\n- `my_function` needs a docstring\n- the docstring needs to be `\"My function does stuff\"`\n- there can be no other functions",
+  "feedback": [
+    {
+      "id": "fb-mgku6wi7-qxrwh",
+      "title": "`my_function` needs two parameters.",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "ast",
+        "target": "code",
+        "expression": "function_calls:my_function",
+        "matcher": "result && result.defined.parameters === 2"
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mgku9yty-rsfwl",
+      "title": "`my_function` is the only defined function.",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "ast",
+        "target": "code",
+        "expression": "function_count",
+        "matcher": "result && result.count === 1 && result.functions[0].name === \"my_function\""
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mgku1o2y-jrwsw",
+      "title": "`my_function` needs to be called.",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "ast",
+        "target": "code",
+        "expression": "function_calls:my_function",
+        "matcher": "result && result.callSites.length === 1"
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mgkubyoy-xa358",
+      "title": "You need to call `my_function` only once, with two arguments.",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "ast",
+        "target": "code",
+        "expression": "function_calls:my_function",
+        "matcher": "result && result.callSites.length === 1 && result.callSites[0].args === 2"
+      },
+      "dependencies": [
+        {
+          "id": "fb-mgku1o2y-jrwsw",
+          "requiresMatched": true
+        }
+      ],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mgkuhjnk-ch4dz",
+      "title": "Does `my_function` have a docstring?",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "ast",
+        "target": "code",
+        "expression": "has_docstring:my_function",
+        "matcher": "result && result.hasDocstring === true"
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mgkuf3e6-1uctv",
+      "title": "Does `my_function` have the right docstring?",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "ast",
+        "target": "code",
+        "expression": "has_docstring:my_function",
+        "matcher": "result && result.docstring === \"My function does stuff\""
+      },
+      "dependencies": [
+        {
+          "id": "fb-mgkuhjnk-ch4dz",
+          "requiresMatched": true
+        }
+      ],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": false
+    }
+  ],
+  "tests": {
+    "groups": [
+      {
+        "id": "group-mgkutn4c-tr4lq",
+        "name": "AST Tests",
+        "collapsed": false,
+        "conditional": {
+          "runIf": "always",
+          "alwaysRun": false
+        },
+        "tests": [
+          {
+            "type": "ast",
+            "astRule": {
+              "type": "ast",
+              "target": "code",
+              "expression": "function_exists:my_function",
+              "matcher": "result && result.name === \"my_function\"",
+              "fileTarget": "main.py"
+            },
+            "id": "ast-test-mgkulv0l-vetwu",
+            "description": "Checking that `my_function` exists",
+            "conditional": {
+              "runIf": "previous_passed",
+              "alwaysRun": false
+            }
+          },
+          {
+            "type": "ast",
+            "astRule": {
+              "type": "ast",
+              "target": "code",
+              "expression": "has_docstring:my_function",
+              "matcher": "result && result.docstring === \"My function does stuff\"",
+              "fileTarget": "main.py"
+            },
+            "id": "ast-test-mgkupyaf-ciucb",
+            "description": "Testing that `my_function` has the correct docstring.",
+            "conditional": {
+              "runIf": "previous_passed",
+              "alwaysRun": false
+            }
+          },
+          {
+            "type": "ast",
+            "astRule": {
+              "type": "ast",
+              "target": "code",
+              "expression": "function_exists:my_function",
+              "matcher": "result && result.parameters === 2",
+              "fileTarget": "main.py"
+            },
+            "id": "ast-test-mgkur9b1-qpmyl",
+            "description": "Checking that `my_function` accepts two parameters.",
+            "conditional": {
+              "runIf": "previous_passed",
+              "alwaysRun": false
+            }
+          },
+          {
+            "type": "ast",
+            "astRule": {
+              "type": "ast",
+              "target": "code",
+              "expression": "function_calls:my_function",
+              "matcher": "result && result.callSites.length === 1 && result.callSites[0].args === 2",
+              "fileTarget": "main.py"
+            },
+            "id": "ast-test-mgkuoat8-vbgoh",
+            "description": "Checking that `my_function` is called with two arguments",
+            "conditional": {
+              "runIf": "previous_passed",
+              "alwaysRun": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "group-mgkuvcqg-d1brn",
+        "name": "Run Tests",
+        "collapsed": false,
+        "conditional": {
+          "runIf": "previous_group_passed",
+          "alwaysRun": false
+        },
+        "tests": [
+          {
+            "id": "t-mgkuvv7q-a2zmk",
+            "description": "Checking your program runs correctly",
+            "expected_stdout": "a is 3\nb is 5\na + b = 8",
+            "conditional": {
+              "runIf": "previous_passed",
+              "alwaysRun": false
+            }
+          },
+          {
+            "id": "t-mgkuxtlz-uyfgu",
+            "description": "Testing your code with different numbers.",
+            "expected_stdout": {
+              "type": "exact",
+              "expression": "a is 3\nb is 5\na + b = 8\na is 7\nb is 2\na + b = 9"
+            },
+            "files": {
+              "/__post.py": "from main import my_function\nmy_function(7, 2)"
+            },
+            "hide_actual_expected": true,
+            "conditional": {
+              "runIf": "previous_passed",
+              "alwaysRun": false
+            }
+          }
+        ]
+      }
+    ],
+    "ungrouped": [],
+    "showGroupsToUsers": true
+  },
+  "starter": "def my_function():\n    print(f\"a is {a}\")\n    print(f\"b is {b}\")\n    print(f\"a + b = {a + b}\")\n\n# my_function(3, 5)",
+  "files": {
+    "/main.py": "def my_function():\n    print(f\"a is {a}\")\n    print(f\"b is {b}\")\n    print(f\"a + b = {a + b}\")\n\n# my_function(3, 5)"
+  },
+  "fileReadOnlyStatus": {}
+}

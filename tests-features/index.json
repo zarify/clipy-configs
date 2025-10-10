@@ -1,0 +1,11 @@
+{
+    "listName": "Feature Demos",
+    "files": [
+        "testing-feedback@1.0.json",
+        "testing-stderr@1.0.json",
+        "test-stdin@1.0.json",
+        "test-code-patterns@1.0.json",
+        "test-filenames@1.0.json",
+        "test-ast-functions@1.0.json"
+    ]
+}

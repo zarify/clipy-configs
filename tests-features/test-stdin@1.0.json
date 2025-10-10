@@ -1,0 +1,51 @@
+{
+  "id": "test-stdin",
+  "title": "Test Stdin",
+  "version": "1.0",
+  "description": "",
+  "instructions": "Run the code and test using the name `Rob`.\n\nBoth feedback items should be checked.\n\nTry again with another name, neither should be checked.",
+  "feedback": [
+    {
+      "id": "fb-mgktrtgq-5yu7r",
+      "title": "Input the name Rob",
+      "when": [
+        "run"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "stdin",
+        "fileTarget": "main.py",
+        "expression": "Rob",
+        "flags": ""
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mgktsffj-cujhc",
+      "title": "Was the right name output?",
+      "when": [
+        "run"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "stdout",
+        "fileTarget": "main.py",
+        "expression": "Hello Rob!",
+        "flags": ""
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": false
+    }
+  ],
+  "tests": "",
+  "starter": "name = input(\"What is your name? \")\nprint(f\"Hello {name}!\")",
+  "files": {
+    "/main.py": "name = input(\"What is your name? \")\nprint(f\"Hello {name}!\")"
+  },
+  "fileReadOnlyStatus": {}
+}

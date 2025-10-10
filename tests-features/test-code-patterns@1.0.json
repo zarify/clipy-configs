@@ -1,0 +1,69 @@
+{
+  "id": "test-code-patterns",
+  "title": "Testing Code Patterns",
+  "version": "1.0",
+  "description": "",
+  "instructions": "# Edit\nChange the `print(\"Hello, World!\")` line to be a comment.\n\nA new feedback item should appear.\n\n# Run\nRemove the comment.\n\nRun the code to see if the runtime feedback appears.",
+  "feedback": [
+    {
+      "id": "fb-mgktamt1-a95of",
+      "title": "Use \"Hello, World!\" in your program",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "Hello, World!",
+        "flags": ""
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    },
+    {
+      "id": "fb-mgkteyvh-l4qkp",
+      "title": "Hello, World! should not be in a comment!",
+      "when": [
+        "edit"
+      ],
+      "pattern": {
+        "type": "regex",
+        "target": "code",
+        "fileTarget": "main.py",
+        "expression": "^#.*Hello, World!",
+        "flags": ""
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "warning",
+      "visibleByDefault": false
+    },
+    {
+      "id": "fb-mgktgd4q-5o1ii",
+      "title": "Run your code to print out the message.",
+      "when": [
+        "run"
+      ],
+      "pattern": {
+        "type": "string",
+        "target": "stdout",
+        "fileTarget": "main.py",
+        "expression": "Hello, World!",
+        "flags": ""
+      },
+      "dependencies": [],
+      "message": "",
+      "severity": "success",
+      "visibleByDefault": true
+    }
+  ],
+  "tests": "",
+  "starter": "print(\"Hello, World!\")",
+  "files": {
+    "/main.py": "print(\"Hello, World!\")"
+  },
+  "fileReadOnlyStatus": {}
+}
