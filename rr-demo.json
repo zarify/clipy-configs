@@ -1,0 +1,15 @@
+{
+  "id": "rr-demo",
+  "title": "RR Demo",
+  "version": "1.0",
+  "description": "A better demo of record-replay",
+  "instructions": "Run the code, hit the replay button and step through the execution.",
+  "feedback": [],
+  "tests": [],
+  "starter": "with open(\"nums.txt\") as f:\n    nums = f.read().strip().split()\n    nums = [int(n) for n in nums]\n    for n in nums:\n        stars = \"*\" * n\n        print(stars)",
+  "files": {
+    "/main.py": "with open(\"nums.txt\") as f:\n    nums = f.read().strip().split()\n    nums = [int(n) for n in nums]\n    for n in nums:\n        stars = \"*\" * n\n        print(stars)",
+    "nums.txt": "3\n7\n5\n1\n6\n2\n9"
+  },
+  "fileReadOnlyStatus": {}
+}
